@@ -2,21 +2,197 @@
 
 ---
 
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nisha choudhary</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="header">
+    
 	</head>
 	<body>
-		<h1>fsdafasdfasdfasdfas</h1>
-	</body>
-</html>
+	
+        <nav class="navbar">
+			<div class="pic">
+			<img src="https://img.freepik.com/premium-vector/career-woman-employee-ai-generated-image_362642-3848.jpg?w=360" alt="Profile-pic"></div>
+            <a href="#" class="logo">Nisha Choudhary</a>
+            <ul class="nav-links">
+				<li><a href="#about">Home</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+	
 
+    <main>
+        <section class="hero" id="home">
+			<div class="profile-pic">
+		    <img src="https://img.freepik.com/premium-vector/career-woman-employee-ai-generated-image_362642-3848.jpg?w=360" alt="Profile-pic"></div>
+			<h1>Hi, I'm Nisha Choudhary</h1>
+			<p>Student and Software Developer.</p>
+			
+
+        </section>
+
+        <section class="about" id="about">
+            <h1>About Me</h1>
+
+            <p>I'm Nisha Choudhary, a full time student from India who also loves building cool things using code.</p><br>
+			<!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque placeat est architecto tempora voluptatem sit suscipit aspernatur?</p> -->
+        </section>
+        <section class="projects" id="projects">
+            <h2>Projects</h2>
+            <div class="project-list">
+                <div class="project-item">
+                    <h3>Project 1</h3>
+                    <p>A brief description of the project.</p>
+                </div>
+                <div class="project-item">
+                    <h3>Project 2</h3>
+                    <p>A brief description of the project.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <h2>Contact</h2>
+            <p>Email: nishajat273@gmail.com</p>
+            <p>LinkedIn: <a href="#"></a> Nisha Choudhary</p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2024 YourName. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
 <style>
-h1{
-	background-color: skyblue;
+
+
+.profile-pic {
+	float: left;
+    width: 200px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 10px;
+	}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.header {
+
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+}
+
+.first{
+	gap: .5rem;
+	row-gap: 0.5rem;
+	column-gap: 0.5rem;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+.pic{
+	width: 80px; 
+	height: 20px; 
+	border-radius: 70%;
+	background-color: #fff
+	
+}
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+	text-align: left;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #00aaff;
+}
+
+.hero {
+    text-align: center;
+    padding: 3em 1em;
+    background-color: #fff;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+	align-items:center;
+}
+
+.hero p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+#home,#about, #projects, #contact {
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 1em;
+    text-align: left;
+}
+#contact {
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 1em;
+    text-align: center;
+}
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: left;
+}
+
+.project-item {
+    background-color: #fff;
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: calc(50% - 1em);
+}
+
+.footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
 }
 </style>
